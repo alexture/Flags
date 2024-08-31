@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div id="filters">
+        <button class="btn btn-primary" type="submit">Red</button>
+        <button class="btn btn-primary" type="submit">White</button>
+        <button class="btn btn-primary" type="submit">Blue</button>
+        <!--Make buttons show up as toggled or not: https://getbootstrap.com/docs/5.3/components/buttons/#toggle-states-->
+    </div>
+
+    <!--Use python with an SQL query to build all cases (one color alone ×3, two colors together ×3, three colors ×1)-->
+
+{% endblock %}
