@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <p>Hi!</p>
+    <p>Did you know <a href="https://en.wikipedia.org/wiki/Flag_of_Jamaica">only one country flag</a> doesn't have red, white, or blue?</p>
+    <p>Play around and discover who has which!</p>
 
     {% for color in colors %}
-        <input name="color" type="radio" value="{{ color }}">{{ color }}</input>
+        <input name="color" type="checkbox" value="{{ color }}">{{ color }}</input>
     {% endfor %}
     <button type="submit">Filter</button>
 

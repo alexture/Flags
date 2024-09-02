@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    color: aliceblue;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(red, white, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a{
+    color: aqua;
+}
+
+a:visited{
+    color:aquamarine;
+}
