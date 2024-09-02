@@ -1,14 +1,14 @@
 {% extends "layout.html" %}
 
 {% block body %}
+    <p>Hi!</p>
 
-    <div id="filters">
-        <button class="btn btn-primary" type="submit">Red</button>
-        <button class="btn btn-primary" type="submit">White</button>
-        <button class="btn btn-primary" type="submit">Blue</button>
-        <!--Make buttons show up as toggled or not: https://getbootstrap.com/docs/5.3/components/buttons/#toggle-states-->
-    </div>
+    {% for color in colors %}
+        <input name="color" type="radio" value="{{ color }}">{{ color }}</input>
+    {% endfor %}
+    <button type="submit">Filter</button>
 
     <!--Use python with an SQL query to build all cases (one color alone ×3, two colors together ×3, three colors ×1)-->
+    <!--Have 3 databases: colors, flags, and color × flag-->
 
 {% endblock %}

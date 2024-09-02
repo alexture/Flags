@@ -1,15 +1,3 @@
 body{
-    margin: 1em;
-    text-align: center;
-    background-color: #FFFDF7;
-}
-
-h1, h2, h3, h4, h5{
-    color: #270722;
-    text-align: center;
-}
-
-div.filters{
-    margin: 10em;
-    text-align: center;
+    background-color: beige;
 }
